@@ -1,0 +1,130 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.loadingPage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fae100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1s forwards;
+  z-index: 1;
+}
+
+.loadingPage > i {
+  font-size: 5em;
+}
+
+.mainPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: fixed;
+  top: 0;
+}
+
+.topNav > span {
+  margin-right: 10px;
+}
+
+.topNav > .topNav__time {
+  margin-left: auto;
+}
+
+.mainHeader {
+  margin-top: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.mainHeader > a {
+  margin-left: auto;
+}
+
+.myProfile {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.myProfile > img {
+  width: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+hr {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.friendsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.friendsList__title {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.friend__img {
+  width: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.bottomNav {
+  width: 100%;
+  height: 50px;
+  background-color: #f9f9fa;
+  display: flex;
+  border: black 1px solid;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0px;
+}
+
+.bottomNav > i {
+  font-size: 20px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    z-index: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
